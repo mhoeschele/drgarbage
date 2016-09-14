@@ -18,7 +18,6 @@ package com.drgarbage.bytecodevisualizer.view;
 import org.eclipse.ui.IEditorPart;
 import org.eclipse.ui.IWorkbenchPage;
 import org.eclipse.ui.IWorkbenchPart;
-import org.eclipse.ui.internal.views.ViewsPlugin;
 import org.eclipse.ui.part.IPage;
 import org.eclipse.ui.part.IPageBookViewPage;
 import org.eclipse.ui.part.MessagePage;
@@ -30,6 +29,7 @@ import com.drgarbage.asm.render.intf.IClassFileDocument;
 import com.drgarbage.asm.render.intf.IMethodSection;
 import com.drgarbage.bytecodevisualizer.editors.BytecodeDocumentProvider;
 import com.drgarbage.bytecodevisualizer.editors.BytecodeEditor;
+import com.drgarbage.core.views.ControlFlowGraphView;
 
 
 /**
@@ -50,7 +50,8 @@ public class OperandStackView extends PageBookView {
         if(part instanceof BytecodeEditor){
         	BytecodeEditor be = (BytecodeEditor) part;
         	OperandStackViewPage page = null;
-        	Object obj = ViewsPlugin.getAdapter(part, OperandStackViewPage.class, false);
+//        	Object obj = ViewsPlugin.getAdapter(part, OperandStackViewPage.class, false);
+        	Object obj = ControlFlowGraphView.getAdapter(part, OperandStackViewPage.class);
             if (obj instanceof OperandStackViewPage) {
             	page = (OperandStackViewPage) obj;
             }

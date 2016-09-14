@@ -90,11 +90,12 @@
       </objectContribution>
    </extension>
    
-   
+<!--   
    <extension
          point="org.eclipse.ui.startup">
       <startup></startup>
    </extension>
+-->
    <extension
          point="org.eclipse.core.runtime.preferences">
       <initializer
