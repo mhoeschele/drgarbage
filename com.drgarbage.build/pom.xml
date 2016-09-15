@@ -8,7 +8,7 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <groupId>com.drgarbage</groupId>
-  <artifactId>com.drgarbage.p2repository</artifactId>
+  <artifactId>com.drgarbage.build</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>eclipse-repository</packaging>
 </project>

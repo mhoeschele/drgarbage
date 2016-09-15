@@ -8,7 +8,7 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <groupId>com.drgarbage</groupId>
-  <artifactId>com.drgarbage.p2repository</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <packaging>eclipse-repository</packaging>
+  <artifactId>com.drgarbage.sourcecodevisualizer</artifactId>
+  <version>4.5.0-SNAPSHOT</version>
+  <packaging>eclipse-feature</packaging>
 </project>

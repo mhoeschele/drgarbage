@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.drgarbage</groupId>
+  <artifactId>drgarbagetools</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <properties>
+    <tycho-version>0.26.0</tycho-version>
+  </properties>
+  <modules>
+    <module>com.drgarbage.asm</module>
+    <module>com.drgarbage.asm.plugin</module>
+    <module>com.drgarbage.asm.src</module>
+    <module>com.drgarbage.build</module>
+    <module>com.drgarbage.bytecodevisualizer</module>
+    <module>com.drgarbage.bytecodevisualizer.feature</module>
+    <module>com.drgarbage.controlflowgraphfactory</module>
+    <module>com.drgarbage.controlflowgraphfactory.feature</module>
+    <module>com.drgarbage.core</module>
+ <!--   <module>com.drgarbage.p2repository</module> -->
+    <module>com.drgarbage.sourcecodevisualizer</module>
+    <module>com.drgarbage.sourcecodevisualizer.feature</module>
+  </modules>
+  <repositories>
+    <repository>
+      <id>eclipse-neon</id>
+      <layout>p2</layout>
+      <url>http://download.eclipse.org/releases/neon</url>
+    </repository>
+  </repositories>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>tycho-maven-plugin</artifactId>
+        <version>${tycho-version}</version>
+        <extensions>true</extensions>
+      </plugin>
+    </plugins>
+  </build>
+</project>
