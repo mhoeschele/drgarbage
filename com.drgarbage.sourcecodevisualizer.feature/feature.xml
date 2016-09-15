@@ -23,7 +23,6 @@
    </url>
 
    <requires>
-      <import plugin="org.eclipse.core.runtime.compatibility" version="3.2.1" match="greaterOrEqual"/>
       <import plugin="org.eclipse.debug.ui" version="3.7.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.jdt.core" version="3.7.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.jdt.launching" version="3.5.1" match="greaterOrEqual"/>
