@@ -90,12 +90,11 @@
       </objectContribution>
    </extension>
    
-<!--   
    <extension
          point="org.eclipse.ui.startup">
-      <startup></startup>
+      <startup class="com.drgarbage.bytecodevisualizer.BytecodeVisualizerStartup" />
    </extension>
--->
+   
    <extension
          point="org.eclipse.core.runtime.preferences">
       <initializer
