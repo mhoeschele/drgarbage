@@ -21,6 +21,8 @@ import org.eclipse.jdt.core.IBuffer;
 import org.eclipse.jdt.core.IClassFile;
 import org.eclipse.jdt.core.ICompilationUnit;
 import org.eclipse.jdt.core.IJavaElement;
+import org.eclipse.jdt.core.IModularClassFile;
+import org.eclipse.jdt.core.IOrdinaryClassFile;
 import org.eclipse.jdt.core.IPackageFragment;
 import org.eclipse.jdt.core.IPackageFragmentRoot;
 import org.eclipse.jdt.core.JavaModelException;
@@ -32,102 +34,150 @@ public class PackageFragment extends OutlineElement implements IPackageFragment 
 		super(arg0);
 	}
 
+	@Override
 	public boolean containsJavaResources() throws JavaModelException {
 		return false;
 	}
 
+	@Override
 	public ICompilationUnit createCompilationUnit(String name, String contents,
 			boolean force, IProgressMonitor monitor) throws JavaModelException {
 		return null;
 	}
 
+	@Override
 	public IClassFile getClassFile(String name) {
 		return null;
 	}
 
+	@Override
 	public IClassFile[] getClassFiles() throws JavaModelException {
 		return null;
 	}
 
+	@Override
 	public ICompilationUnit getCompilationUnit(String name) {
 		return null;
 	}
 
+	@Override
 	public ICompilationUnit[] getCompilationUnits() throws JavaModelException {
 		return null;
 	}
 
+	@Override
 	public ICompilationUnit[] getCompilationUnits(WorkingCopyOwner owner)
 			throws JavaModelException {
 		return null;
 	}
 
+	@Override
 	public int getKind() throws JavaModelException {
 		return IPackageFragmentRoot.K_BINARY;
 	}
 
+	@Override
 	public Object[] getNonJavaResources() throws JavaModelException {
 		return null;
 	}
 
+	@Override
 	public boolean hasSubpackages() throws JavaModelException {
 		return false;
 	}
 
+	@Override
 	public boolean isDefaultPackage() {
 		return false;
 	}
 
+	@Override
 	public void close() throws JavaModelException {
 	}
 
+	@Override
 	public String findRecommendedLineSeparator() throws JavaModelException {
 		return null;
 	}
 
+	@Override
 	public IBuffer getBuffer() throws JavaModelException {
 		return null;
 	}
 
+	@Override
 	public boolean hasUnsavedChanges() throws JavaModelException {
 		return false;
 	}
 
+	@Override
 	public boolean isConsistent() throws JavaModelException {
 		return false;
 	}
 
+	@Override
 	public boolean isOpen() {
 		return false;
 	}
 
+	@Override
 	public void makeConsistent(IProgressMonitor progress)
 			throws JavaModelException {
 	}
 
+	@Override
 	public void open(IProgressMonitor progress) throws JavaModelException {
 	}
 
+	@Override
 	public void save(IProgressMonitor progress, boolean force)
 			throws JavaModelException {
 	}
 
+	@Override
 	public void copy(IJavaElement container, IJavaElement sibling,
 			String rename, boolean replace, IProgressMonitor monitor)
-			throws JavaModelException {
+					throws JavaModelException {
 	}
 
+	@Override
 	public void delete(boolean force, IProgressMonitor monitor)
 			throws JavaModelException {
 	}
 
+	@Override
 	public void move(IJavaElement container, IJavaElement sibling,
 			String rename, boolean replace, IProgressMonitor monitor)
+					throws JavaModelException {
+	}
+
+	@Override
+	public void rename(String name, boolean replace, IProgressMonitor monitor)
 			throws JavaModelException {
 	}
 
-	public void rename(String name, boolean replace, IProgressMonitor monitor)
-			throws JavaModelException {
+	@Override
+	public IClassFile[] getAllClassFiles() throws JavaModelException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public IModularClassFile getModularClassFile() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public IOrdinaryClassFile getOrdinaryClassFile(String arg0) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public IOrdinaryClassFile[] getOrdinaryClassFiles() throws JavaModelException {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
